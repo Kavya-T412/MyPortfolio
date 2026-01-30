@@ -10,6 +10,8 @@ const projects = [
     icon: Cpu,
     tags: ['YOLOv8', 'OpenCV', 'Flask', 'React.js', 'Firebase', 'Raspberry Pi'],
     color: 'from-blue-500 to-cyan-500',
+    codeUrl: 'https://github.com/Kavya-T412/Traffic_Management_Testing.git',
+    demoUrl: '',
   },
   {
     title: 'Invoice Tracking WebApp',
@@ -19,6 +21,8 @@ const projects = [
     icon: FileText,
     tags: ['Flask', 'MySQL', 'Twilio API', 'Voice Input'],
     color: 'from-green-500 to-emerald-500',
+    codeUrl: 'https://github.com/Kavya-T412/Invoice_Manager.git',
+    demoUrl: '',
   },
   {
     title: 'ERC20 Token Factory Dapp',
@@ -29,6 +33,8 @@ const projects = [
     icon: Coins,
     tags: ['Solidity', 'React', 'Ethers.js', 'Web3Modal', 'Ethereum'],
     color: 'from-purple-500 to-pink-500',
+    codeUrl: 'https://github.com/Kavya-T412/Create_Own_Token.git',
+    demoUrl: 'https://createowntoken.netlify.app/',
   },
   {
     title: 'CivicChain – Decentralized Governance',
@@ -39,6 +45,8 @@ const projects = [
     icon: Vote,
     tags: ['Blockchain', 'Smart Contracts', 'Web3', 'Governance'],
     color: 'from-orange-500 to-amber-500',
+    codeUrl: 'https://github.com/Kavya-T412/GovtPlatform.git',
+    demoUrl: 'https://govtexp.netlify.app/',
   },
   {
     title: 'MintGuard – Secure NFT Platform',
@@ -49,6 +57,8 @@ const projects = [
     icon: Shield,
     tags: ['Ethereum', 'NFT', 'Solidity', 'Security', 'React'],
     color: 'from-red-500 to-rose-500',
+    codeUrl: 'https://github.com/Kavya-T412/MintGuard.git',
+    demoUrl: '',
   },
 ];
 
@@ -111,14 +121,26 @@ const Projects = () => {
 
                 {/* Actions */}
                 <div className="flex gap-3">
-                  <button className="flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors">
+                  <a
+                    href={project.codeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+                  >
                     <Github size={16} />
                     View Code
-                  </button>
-                  <button className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-                    <ExternalLink size={16} />
-                    Live Demo
-                  </button>
+                  </a>
+                  {project.demoUrl && (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      <ExternalLink size={16} />
+                      Live Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
