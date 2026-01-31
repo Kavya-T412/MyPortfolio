@@ -17,7 +17,7 @@ const hackathons = [
     description:
       'Participated in Smart India Hackathon (SIH) 2025 and qualified at the college-level selection round.',
     achievement:
-      'Contributed to the design of an AI-based Smart Traffic Management System using YOLOv8, OpenCV, and Flask.',
+      'Contributed to the design of an AI-based Smart Traffic Management System frontend.',
     icon: Zap,
   },
   {
@@ -27,7 +27,7 @@ const hackathons = [
     description:
       'Participated in DUHacks 5.0 and collaboratively designed a real-world blockchain solution under strict time constraints.',
     achievement:
-      'Demonstrated rapid problem-solving, system design, and end-to-end development skills to deliver a working prototype.',
+      'Demonstrated rapid problem-solving, system design, and end-to-end development skills to deliver a working prototype. Majorly guided the team in blockchain integration and smart contract integration.',
     icon: Users,
   },
 ];
