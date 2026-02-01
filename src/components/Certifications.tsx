@@ -5,21 +5,43 @@ const certifications = [
     title: 'Introduction to Ethical Hacking',
     issuer: 'Great Learning',
     category: 'Cybersecurity',
+    url: 'https://www.mygreatlearning.com/certificate/CMZGQNAX?referrer_code=GLCB6E-NR77CM',
+  },
+  {
+    title: 'Introduction to Cybersecurity',
+    issuer: 'Great Learning',
+    category: 'Cybersecurity',
+    url: 'https://www.mygreatlearning.com/certificate/CMZGQNAX?referrer_code=GLCB6E-NR77CM',
   },
   {
     title: 'Blockchain Basics',
     issuer: 'Coursera',
     category: 'Blockchain',
+    url: 'https://www.coursera.org/account/accomplishments/verify/C7LY8Q1RX7XL?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse',
   },
   {
     title: 'Fundamentals of Java Programming',
     issuer: 'Coursera',
     category: 'Programming',
+    url: 'https://www.coursera.org/account/accomplishments/verify/ZVGT1ICHV675?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse',
   },
   {
     title: 'Blockchain: The Future',
     issuer: 'Techara',
     category: 'Blockchain',
+    url: 'https://1drv.ms/b/c/959111196ea6daf9/IQBpB43nL6PGR5TCh75mdjR-AZFlsncPt59MZ_lXctuUEF8?e=PrkcfW',
+  },
+  {
+    title: 'Smart Contracts',
+    issuer: 'University at Buffalo',
+    category: 'Blockchain',
+    url: 'https://www.coursera.org/account/accomplishments/verify/9TP7E3VAXJKG?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse',
+  },
+  {
+    title: 'Decentralized Applications (DApps)',
+    issuer: 'University at Buffalo',
+    category: 'Blockchain',
+    url: 'https://coursera.org/share/26756568e9a33aacf415039e4bbd7de9',
   },
 ];
 
@@ -70,10 +92,15 @@ const Certifications = () => {
               <p className="text-muted-foreground text-sm mb-4">Issued by {cert.issuer}</p>
 
               {/* Link */}
-              <button className="flex items-center gap-2 text-sm font-medium text-primary hover:underline">
+              <a
+                href={cert.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+              >
                 View Certificate
                 <ExternalLink size={14} />
-              </button>
+              </a>
             </div>
           ))}
         </div>
