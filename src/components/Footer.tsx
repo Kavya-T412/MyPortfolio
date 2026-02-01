@@ -10,10 +10,10 @@ const Footer = () => {
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
             <a href="#" className="text-2xl font-bold text-white mb-2 inline-block">
-              KAVYA<span className="text-hero-accent">.</span>
+              KAVYA<span className="text-hero-accent"></span>
             </a>
             <p className="text-white/60 text-sm">
-              © {currentYear} Kavya T. All rights reserved.
+              © Kavya T. Open for internships.
             </p>
           </div>
 
@@ -72,7 +72,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="text-center">
           <p className="text-white/40 text-sm flex items-center justify-center gap-2">
-            Made with <Heart size={14} className="text-destructive" /> using React & Tailwind CSS
+            Open for Internships & Collobration
           </p>
         </div>
       </div>
