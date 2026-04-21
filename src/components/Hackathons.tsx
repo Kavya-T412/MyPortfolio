@@ -1,10 +1,10 @@
-import { Trophy, Calendar, Users, Zap } from 'lucide-react';
+import { Trophy, Calendar, Users, Zap, Github } from 'lucide-react';
 
 const hackathons = [
   {
     title: 'PyExpo Hackathon',
-    organizer: 'KGISL',
-    year: '2025',
+    organizer: 'KGISL Institute of Technology',
+    year: 'JAN - FEB 2025',
     description:
       'Developed a Donation Matching Web App (concept stage) using Python, Flask, and MySQL with basic authentication and matching logic.',
     achievement: 'Collaborated in a team to design the prototype, applying problem-solving and rapid development skills.',
@@ -13,21 +13,34 @@ const hackathons = [
   {
     title: 'Smart India Hackathon (SIH)',
     organizer: 'Government of India',
-    year: '2025',
+    year: 'NOV - DEC 2025',
     description:
       'Participated in Smart India Hackathon (SIH) 2025 and qualified at the college-level selection round.',
     achievement:
       'Contributed to the design of an AI-based Smart Traffic Management System frontend.',
+    repoLink: 'https://github.com/Kavya-T412/Traffic_Management.git',
     icon: Zap,
   },
   {
     title: 'DUHACKS 5.0',
     organizer: '36-hour Hackathon',
-    year: '2026',
+    year: 'JAN - FEB 2026',
     description:
       'Participated in DUHacks 5.0 and collaboratively designed a real-world blockchain solution under strict time constraints.',
     achievement:
       'Demonstrated rapid problem-solving, system design, and end-to-end development skills to deliver a working prototype. Majorly guided the team in blockchain integration and smart contract integration.',
+    repoLink: 'https://github.com/Kavya-T412/GovtPlatform.git',
+    icon: Users,
+  },
+   {
+    title: 'Convergence',
+    organizer: 'Chainlink',
+    year: 'FEB - MAR 2026',
+    description:
+      'Participated in Chainlink Hackathon and developed MAIMA – an AI-powered blockchain analysis platform leveraging Chainlink oracle, CRE integration for real-time on-chain insights.',
+    achievement:
+      'Demonstrated expertise in oracle architecture, Chainlink CRE implementation, smart contract integration, and AI-driven analysis by delivering a production-ready prototype. Majorly guided the team in Chainlink oracle integration, report generation optimization, and blockchain data visualization. Implemented real-time data feeds and automated analysis workflows with enterprise-grade reliability.',
+    repoLink: 'https://github.com/mrselva-eth/MAIMA.git',
     icon: Users,
   },
 ];
@@ -98,6 +111,19 @@ const Hackathons = () => {
                         {hackathon.achievement}
                       </p>
                     </div>
+
+                    {/* Repository Link */}
+                    {hackathon.repoLink && (
+                      <a
+                        href={hackathon.repoLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-hero-accent/20 hover:bg-hero-accent/30 text-hero-accent transition-colors"
+                      >
+                        <Github size={18} />
+                        <span className="text-sm font-medium">View Repository</span>
+                      </a>
+                    )}
                   </div>
                 </div>
 

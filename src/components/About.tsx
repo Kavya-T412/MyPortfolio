@@ -22,7 +22,7 @@ const About = () => {
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
               I'm an Engineering student at KGISL Institute of Technology, pursuing a Bachelor's
               degree in Computer Science Engineering with a specialization in Cybersecurity.
-              My passion lies at the intersection of blockchain technology, AI/ML, and
+              My passion lies at the intersection of blockchain technology and
               cybersecurity.
             </p>
 

@@ -4,6 +4,7 @@ const skillsData = {
   programming: [
     { name: 'Python', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
     { name: 'JavaScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+    { name: 'TypeScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
     { name: 'Solidity', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg' },
     { name: 'Java', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
     { name: 'C', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg' },
@@ -14,6 +15,7 @@ const skillsData = {
     { name: 'HTML', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
     { name: 'CSS', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
     { name: 'JavaScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+    { name: 'TypeScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
   ],
   tools: [
     { name: 'Git', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
@@ -21,8 +23,9 @@ const skillsData = {
     { name: 'VS Code', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
     { name: 'Flask', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg' },
     { name: 'Firebase', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg' },
-    { name: 'Web3', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/web3js/web3js-original.svg' },
-    { name: 'Ethers.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ethereum/ethereum-original.svg' },
+    { name: 'Web3.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/web3js/web3js-original.svg' },
+    { name: 'Ethers.js', logo: 'https://docs.ethers.org/v5/static/logo.svg' },
+    { name: 'Rainbowkit', logo: 'https://avatars.githubusercontent.com/u/48327834?s=48&v=4' },
   ],
   soft: ['Teamwork', 'Time Management', 'Problem Solving', 'Communication'],
 };
@@ -107,11 +110,17 @@ const Skills = () => {
                   key={tool.name}
                   className="flex items-center gap-2 p-2 rounded-lg bg-muted/30 border border-border/50 hover:border-hero-accent/30 transition-all duration-300"
                 >
-                  <img 
-                    src={tool.logo} 
-                    alt={tool.name} 
-                    className="w-4 h-4 object-contain"
-                  />
+                  <div
+                    className={`flex h-6 w-6 items-center justify-center rounded-md ${
+                      tool.name === 'Ethers.js' ? 'bg-hero p-1' : 'bg-transparent'
+                    }`}
+                  >
+                    <img
+                      src={tool.logo}
+                      alt={tool.name}
+                      className="h-full w-full object-contain"
+                    />
+                  </div>
                   <span className="text-xs font-medium text-foreground">{tool.name}</span>
                 </div>
               ))}

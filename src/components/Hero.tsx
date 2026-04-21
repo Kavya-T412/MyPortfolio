@@ -7,7 +7,6 @@ const scrollingWords = [
   'Web3',
   'Smart Contracts',
   'DeFi',
-  'AI/ML',
   'React',
   'Solidity',
   'Python',
@@ -77,8 +76,8 @@ const Hero = () => {
             <p className="text-lg md:text-xl text-white/70 max-w-xl mb-8 leading-relaxed">
               Engineering student with a strong foundation in{' '}
               <span className="text-white font-medium">Blockchain</span>,{' '}
-              <span className="text-white font-medium">Cybersecurity</span>, and{' '}
-              <span className="text-white font-medium">AI/ML</span>. Building secure and
+              <span className="text-white font-medium">Web3</span> and{' '}
+              <span className="text-white font-medium">Cybersecurity</span>. Building secure and
               innovative solutions for the decentralized future.
             </p>
 

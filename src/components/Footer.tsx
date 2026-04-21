@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
             <a href="#" className="text-2xl font-bold text-white mb-2 inline-block">
-              KAVYA<span className="text-hero-accent"></span>
+              KAVYA<span className="text-hero-accent"> T</span>
             </a>
             <p className="text-white/60 text-sm">
               © Kavya T. Open for internships.

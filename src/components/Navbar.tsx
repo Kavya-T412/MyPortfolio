@@ -51,7 +51,7 @@ const Navbar = () => {
               isScrolled ? 'text-foreground' : 'text-white'
             }`}
           >
-            KAVYA
+            KAVYA T
           </a>
 
           {/* Desktop Navigation */}

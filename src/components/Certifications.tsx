@@ -20,12 +20,6 @@ const certifications = [
     url: 'https://www.coursera.org/account/accomplishments/verify/C7LY8Q1RX7XL?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse',
   },
   {
-    title: 'Fundamentals of Java Programming',
-    issuer: 'Coursera',
-    category: 'Programming',
-    url: 'https://www.coursera.org/account/accomplishments/verify/ZVGT1ICHV675?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse',
-  },
-  {
     title: 'Blockchain: The Future',
     issuer: 'Techara',
     category: 'Blockchain',
@@ -42,6 +36,12 @@ const certifications = [
     issuer: 'University at Buffalo',
     category: 'Blockchain',
     url: 'https://coursera.org/share/26756568e9a33aacf415039e4bbd7de9',
+  },
+  {
+    title: 'Chainlink Fundamentals',
+    issuer: 'Cyfrin Updraft',
+    category: 'Blockchain',
+    url: 'https://profiles.cyfrin.io/u/tkavya402/certificates/chainlink-fundamentals',
   },
 ];
 

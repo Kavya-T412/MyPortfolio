@@ -2,18 +2,6 @@ import { ExternalLink, Github, Cpu, FileText, Coins, Vote, Shield } from 'lucide
 
 const projects = [
   {
-    title: 'AI-Based Traffic Management System',
-    description:
-      'Built an intelligent traffic management model using YOLOv8, OpenCV, and Raspberry Pi to detect vehicles, accidents, and ambulances in real time.',
-    details:
-      'Integrated Flask backend and Firebase database with React.js dashboard for monitoring and alerts.',
-    icon: Cpu,
-    tags: ['YOLOv8', 'OpenCV', 'Flask', 'React.js', 'Firebase', 'Raspberry Pi'],
-    color: 'from-blue-500 to-cyan-500',
-    codeUrl: 'https://github.com/Kavya-T412/Traffic_Management_Testing.git',
-    demoUrl: '',
-  },
-  {
     title: 'Invoice Tracking WebApp',
     description:
       'Developed a web application to manage and categorize invoices with Flask, MySQL, and voice-based input.',
@@ -23,6 +11,18 @@ const projects = [
     color: 'from-green-500 to-emerald-500',
     codeUrl: 'https://github.com/Kavya-T412/Invoice_Manager.git',
     demoUrl: '',
+  },
+  {
+    title: 'ExBlok - Blockchain Data Explorer',
+    description:
+      'Developed a Web3-based blockchain explorer to fetch and display transaction details, wallet balances, and block information using real-time blockchain data integration; designed a responsive UI for easy on-chain data visualization and tracking.',
+    details:
+      'Integrated Ethers.js with live RPC endpoints to fetch and display real-time transaction details, wallet balances, and block metadata',
+    icon: Cpu,
+    tags: ['React', 'Ether.js', 'TypeScript','Blockchain APIs'],
+    color: 'from-blue-500 to-cyan-500',
+    codeUrl: 'https://github.com/Kavya-T412/Blok_Explorer.git',
+    demoUrl: 'https://exblok.netlify.app/',
   },
   {
     title: 'ERC20 Token Factory Dapp',
@@ -43,7 +43,7 @@ const projects = [
     details:
       'Implemented Web3 wallet authentication and immutable audit trails, improving accountability and trust in public service delivery.',
     icon: Vote,
-    tags: ['Blockchain', 'Smart Contracts', 'Web3', 'Governance'],
+    tags: ['Blockchain', 'Smart Contracts', 'Web3', 'Governance','Solidity'],
     color: 'from-orange-500 to-amber-500',
     codeUrl: 'https://github.com/Kavya-T412/GovtPlatform.git',
     demoUrl: 'https://govtexp.netlify.app/',
@@ -58,7 +58,7 @@ const projects = [
     tags: ['Ethereum', 'NFT', 'Solidity', 'Security', 'React'],
     color: 'from-red-500 to-rose-500',
     codeUrl: 'https://github.com/Kavya-T412/MintGuard.git',
-    demoUrl: '',
+    demoUrl: 'https://mintgard.netlify.app/',
   },
 ];
 
